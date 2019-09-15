@@ -1,0 +1,350 @@
+/* CSS files add styling rules to your content */
+* {
+  box-size: border-box;
+}
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #AFF2EE;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 80px;
+  color: #000000;
+  padding: 0px;
+  margin: 0px 0px 50px 0px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #000000;
+  padding: 0px;
+  margin: 0px;
+}
+
+.p2 {
+  font-weight: bold;
+  text-align: left;
+  font-size: 80;
+}
+
+p {
+  font-weight: regular;
+  font-size: 30;
+  text-align: center;
+}
+
+.footer {
+  font-size: 15px;
+}
+
+.footer img {
+  width: 30px;
+  padding: 10px 0px 0px 0px;
+}
+
+#container-overall {
+  /*background-color: #AFF2EE;*/
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#container-middle {
+  /*background-color: #AFF2EE;*/
+  padding: 100px 0px 0px 0px;
+  flex-grow: 8;
+  width: 200px;
+}
+
+#container-left {
+  min-width: 100px;
+  height: 100vh;
+  /*background-color: #AFF2EE;*/
+  flex-grow: 2;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-right {
+  min-width: 100px;
+  height: 100vh;
+  /*background-color: #AFF2EE;*/
+  flex-grow: 2;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-p {
+  font-style: regular;
+  font-size: 40px;
+  transform: rotate(-90deg);
+  position: fixed;
+  margin: 0px 0px 100px 0px;
+}
+
+.navigation-a {
+  font-weight: regular;
+  font-size: 40px;
+  transform: rotate(90deg);
+  position: fixed;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
+
+#portfolio-titles {
+  text-align: center;
+  font-size: 100px;
+  padding: 20px 0px 0px 0px;
+}
+
+#portfolio-titles a {
+  font-weight: bold;
+  color: white;
+}
+
+#portfolio-titles a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#navbar {
+  margin: 0px;
+  padding: 100px;
+}
+
+#navbar a {
+  font-weight: regular;
+}
+
+#navbar a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid black;
+}
+
+#image-container {
+  padding: 0px;
+  margin: 0px;
+}
+
+#image-container img {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+#about-container {
+  display: flex;
+}
+
+#hi-box {
+  align-content: flex-start; 
+  padding: 0px 0px 60px 0px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#findme-box {
+  flex: 50%;
+}
+
+#studies-box {
+  flex: 50%;
+}
+
+.inline-white {
+  color: white;
+}
+
+/*Scroll color change animation*/
+
+.wrapper {
+  transition: background .2s ease;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-bottom:40px;
+}
+
+#h1 {
+}
+
+#h2 { 
+}
+
+.inline-white a {
+  color: white;
+}
+
+.inline-white a:hover {
+  text-decoration: none;
+  color: black
+}
+
+#mailto a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#topbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+/*  Below Added By Devan  */
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Below Added By Devan  */
+#topbox img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* ^^ Added By devthedev */
+
+#topbox.alone {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#topbox img {
+  width: 5em;
+  padding: 50px;
+}
+
+@media screen and (max-width: 590px) {
+  .p2 {
+    text-align: center;
+  }
+  
+  #container-left {
+    position: fixed;
+    align-items: flex-end;
+  }
+  
+  #container-middle {
+    padding: 200px 0px 0px 0px;
+    justify-content: column;
+    align-content: center;
+  }
+  
+  #container-right  {
+    position: fixed;
+    right: 0;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .navigation-p {
+    padding: 140px 0px 0px 65px;
+    transform: none;
+    align-self: flex-start;
+  }
+  
+  .navigation-a {
+    padding: 140px 25px 0px 0px;
+    transform: none;
+    align-self: flex-start;
+  }
+  
+  #h1 {
+    padding: 0px 10px 0px 10px;
+    margin: 0px;
+  }
+  
+  #h2 {
+    padding: 0px 10px 0px 10px;
+  }
+  
+  h1 {
+    font-size: 45px;
+    margin: 0px 0px 20px 0px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin: 0px;
+  }
+  
+  #navbar {
+    padding: 30px 0px 0px 0px;
+  }
+  
+  #portfolio-titles {
+    line-height: 100%;
+    padding: 0px;
+  }
+  
+  #portfolio-titles a {
+    padding: 0px 0px 0px 0px;
+    font-size: 90px;
+    view-port:100%;
+  }
+  
+  #about-container {
+    flex-direction: column;
+  }
+  
+  #hi-box {
+    padding: 0px 3px 0px 3px;
+  }
+  
+  #findme-box {
+    padding: 0px 3px 0px 3px;
+  }
+  
+  #studies-box {
+    padding: 0px 3px 0px 3px;
+  }
+  
+  body {
+    background-size: 3em auto;
+    background-position: center 30px;
+  }
+  
+  #topbox {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  
+  #topbox img {
+  width: 5em;
+  padding: 20px;
+  position: relative;
+  
+}
+  
+}
+
+
